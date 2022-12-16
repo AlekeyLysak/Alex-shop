@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Document</title>
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-3">
+					<div class="logo">
+						<a href="#">
+							<img src="img/logo.jpg" alt="Logo">
+						</a>
+					</div>
+				</div>
+				<nav class="col-6">
+					<ul class="menu">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Products<i class="fa-solid fa-angle-down"></i></a>
+							<ul class="submenu">
+								<li><a href="#">Lorem ipsum dolor</a></li>
+								<li><a href="#">Sit amet</a></li>
+								<li><a href="#">Consectetur adipisicin</a></li>
+								<li><a href="#">Tempor incididunt</a></li>
+								<li><a href="#">Dolore magna aliqua</a></li>
+								<li><a href="#">Ut enim ad minim veniam</a></li>
+								<li><a href="#">Quis nostrud</a></li>
+							 </ul>
+						</li>
+						<li><a href="#">Payment</a></li>
+						<li><a href="#">Shipping</a></li>
+					</ul>
+				</nav>
+				<div class="col-3">
+					<div class="row">
+						<div class="col-9">
+							<form action class="search-form">
+								<input class="form-control" type="text" placeholder="search" name="search">
+								<button class="btn" type="submit"><i class="fas fa-search" aria-hidden="true"></i></button>
+							</form>
+						</div>
+						<div class="col-3">
+							<div class="card">
+								<div class="products-count">4</div>
+								<a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="header-carousel">
+		<div class="container">
+			<div class="carosel-slider"></div>
+		</div>
+	</section>
+	<main class="main">
+		<div class="container">
+			<div class="row">
+				<aside class="col-3">Filter</aside>
+				<section class="col-9">
+					<div class="row">
+						<div class="col-12">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="#">Home page</a></li>
+								<li class="breadcrumb-item"><a href="#">Products</a></li>
+								<li class="breadcrumb-item"><a href="#">Laptops and tablets</a></li>
+							</ol>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-8">
+							<h1 class="title">Laptops and Tablets</h1>
+						</div>
+						<div class="col-4">
+							<select name="filter" id="selectmenu-filter" class="selectmenu">
+								<option value="">sort by price</option>
+								<option value="">sort by name</option>
+								<option value="">sort by date</option>
+								<option value="">sort by popularity</option>
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-4">
+							<div class="product">
+								<div class="product-img">
+									<img src="img/01.png" alt="Image">
+									<div class="zoom"></div>
+									<div class="like"></div>
+								</div>
+								<h2 class="products-title">#1 Device Name</h2>
+								<p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+								<div class="product-features"><span>TYPE:</span>  Laptop</div>
+								<div class="product-features"><span>SCREEN SIZE:</span> 7 inthes</div>
+								<div class="product-features"><span>RAM:</span>  1 GB</div>
+								<div class="product-price">$599<sup>25</sup></div>
+								<button class="btn more-detail">MORE DETAILS</button>
+								<button class="btn add-cart">ADD TO CARD<i class="fa fa-shopping-cart__one" aria-hidden="true"></i></button>
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="product">
+								<div class="product-img">
+									<img src="img/02.png" alt="Image">
+									<div class="zoom"></div>
+									<div class="like"></div>
+								</div>
+								<h2 class="products-title">#2 Device Name</h2>
+								<p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+								<div class="product-features"><span>TYPE:</span>  Laptop</div>
+								<div class="product-features"><span>SCREEN SIZE: </span> 7 inthes</div>
+								<div class="product-features"><span>RAM:</span> 1 GB</div>
+								<div class="product-price">$1250<sup>99</sup></div>
+								<button class="btn more-detail">MORE DETAILS</button>
+								<button class="btn add-cart">ADD TO CARD<i class="fa fa-shopping-cart__one" aria-hidden="true"></i></button>
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="product">
+								<div class="product-img">
+									<img src="img/03.png" alt="">
+									<div class="zoom"></div>
+									<div class="like"></div>
+								</div>
+								<h2 class="products-title">#3 Device Name</h2>
+								<p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+								<div class="product-features"><span>TYPE:</span>  Laptop</div>
+								<div class="product-features"><span>SCREEN SIZE:</span> 7 inthes</div>
+								<div class="product-features"><span>RAM:</span>  1 GB</div>
+								<div class="product-price">$399<sup>50</sup></div>
+								<button class="btn more-detail">MORE DETAILS</button>
+								<button class="btn add-cart">ADD TO CARD<i class="fa fa-shopping-cart__one" aria-hidden="true"></i></button>
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="product">
+								<div class="product-img">
+									<img src="img/04.png" alt="Image">
+									<div class="zoom"></div>
+									<div class="like"></div>
+								</div>
+								<h2 class="products-title">#1 Device Name</h2>
+								<p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+								<div class="product-features"><span>TYPE:</span>  Laptop</div>
+								<div class="product-features"><span>SCREEN SIZE:</span> 7 inthes</div>
+								<div class="product-features"><span>RAM:</span>  1 GB</div>
+								<div class="product-price">$599<sup>25</sup></div>
+								<button class="btn more-detail">MORE DETAILS</button>
+								<button class="btn add-cart">ADD TO CARD<i class="fa fa-shopping-cart__one" aria-hidden="true"></i></button>
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="product">
+								<div class="product-img">
+									<img src="img/05.png" alt="Image">
+									<div class="zoom"></div>
+									<div class="like"></div>
+								</div>
+								<h2 class="products-title">#1 Device Name</h2>
+								<p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+								<div class="product-features"><span>TYPE:</span>  Laptop</div>
+								<div class="product-features"><span>SCREEN SIZE:</span> 7 inthes</div>
+								<div class="product-features"><span>RAM:</span>  1 GB</div>
+								<div class="product-price">$599<sup>25</sup></div>
+								<button class="btn more-detail">MORE DETAILS</button>
+								<button class="btn add-cart">ADD TO CARD<i class="fa fa-shopping-cart__one" aria-hidden="true"></i></button>
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="product">
+								<div class="product-img">
+									<img src="img/06.png" alt="Image">
+									<div class="zoom"></div>
+									<div class="like"></div>
+								</div>
+								<h2 class="products-title">#1 Device Name</h2>
+								<p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+								<div class="product-features"><span>TYPE:</span>  Laptop</div>
+								<div class="product-features"><span>SCREEN SIZE:</span> 7 inthes</div>
+								<div class="product-features"><span>RAM:</span>  1 GB</div>
+								<div class="product-price">$599<sup>25</sup></div>
+								<button class="btn more-detail">MORE DETAILS</button>
+								<button class="btn add-cart">ADD TO CARD<i class="fa fa-shopping-cart__one" aria-hidden="true"></i></button>
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="product">
+								<div class="product-img">
+									<img src="img/07.png" alt="Image">
+									<div class="zoom"></div>
+									<div class="like"></div>
+								</div>
+								<h2 class="products-title">#1 Device Name</h2>
+								<p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+								<div class="product-features"><span>TYPE:</span>  Laptop</div>
+								<div class="product-features"><span>SCREEN SIZE:</span> 7 inthes</div>
+								<div class="product-features"><span>RAM:</span>  1 GB</div>
+								<div class="product-price">$599<sup>25</sup></div>
+								<button class="btn more-detail">MORE DETAILS</button>
+								<button class="btn add-cart">ADD TO CARD<i class="fa fa-shopping-cart__one" aria-hidden="true"></i></button>
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="product">
+								<div class="product-img">
+									<img src="img/02.png" alt="Image">
+									<div class="zoom"></div>
+									<div class="like"></div>
+								</div>
+								<h2 class="products-title">#2 Device Name</h2>
+								<p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+								<div class="product-features"><span>TYPE:</span>  Laptop</div>
+								<div class="product-features"><span>SCREEN SIZE: </span> 7 inthes</div>
+								<div class="product-features"><span>RAM:</span> 1 GB</div>
+								<div class="product-price">$1250<sup>99</sup></div>
+								<button class="btn more-detail">MORE DETAILS</button>
+								<button class="btn add-cart">ADD TO CARD<i class="fa fa-shopping-cart__one" aria-hidden="true"></i></button>
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="product">
+								<div class="product-img">
+									<img src="img/03.png" alt="">
+									<div class="zoom"></div>
+									<div class="like"></div>
+								</div>
+								<h2 class="products-title">#3 Device Name</h2>
+								<p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+								<div class="product-features"><span>TYPE:</span>  Laptop</div>
+								<div class="product-features"><span>SCREEN SIZE:</span> 7 inthes</div>
+								<div class="product-features"><span>RAM:</span>  1 GB</div>
+								<div class="product-price">$399<sup>50</sup></div>
+								<button class="btn more-detail">MORE DETAILS</button>
+								<button class="btn add-cart">ADD TO CARD<i class="fa fa-shopping-cart__one" aria-hidden="true"></i></button>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</main>
+</body>
+</html>
