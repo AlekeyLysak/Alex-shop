@@ -1,5 +1,5 @@
 const count = document.querySelector(".red");
-const backColCount = document.querySelector(".products-count");
+const backColCount = document.querySelector("#products-count");
 const btns = document.querySelectorAll(".add-btn");
 const arrButtons = Array.from(btns);
 const addToCart = () => {
