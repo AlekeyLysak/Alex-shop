@@ -12,6 +12,8 @@
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 	<link rel="stylesheet" href="css/all.css">
 	<link rel="stylesheet" href="css/reset.css">
+   	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 	<link rel="stylesheet" href="css/style.css">
 	<title>Document</title>
 </head>
@@ -54,7 +56,7 @@
 						</div>
 						<div class="col-3">
 							<div class="card">
-								<div id ="products-count" class="red">0</div>
+								<div id ="products-count">0</div>
 								<a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
 							</div>
 						</div>
@@ -63,11 +65,20 @@
 			</div>
 		</div>
 	</header>
-	<section class="header-carousel">
+	<div class="slider-container">
 		<div class="container">
-			<div class="carosel-slider"></div>
+			<div class="row">
+                <div class="col-12">
+                    <div class="slider">
+                        <div>Slide #1</div>
+                        <div>Slide #2</div>
+                        <div>Slide #3</div>
+                        <div>Slide #4</div>
+                    </div>
+                </div>
+            </div>
 		</div>
-	</section>
+	</div>
 	<main class="main">
 		<div class="container">
 			<div class="row">
@@ -169,11 +180,7 @@
 											<i class="fa-solid fa-expand" aria-hidden="true"></i>
 										</button>
 									</div>
-									<div class="like">
-										<button class="btn like-btn">
-											<i class="fa-regular fa-heart" aria-hidden="true"></i>
-										</button>
-									</div>
+									<div class="like"></div>
 								</div>
 								<h2 class="products-title">#1 Device Name</h2>
 								<p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
@@ -194,11 +201,7 @@
 											<i class="fa-solid fa-expand" aria-hidden="true"></i>
 										</button>
 									</div>
-									<div class="like">
-										<button class="btn like-btn">
-											<i class="fa-regular fa-heart" aria-hidden="true"></i>
-										</button>
-									</div>
+									<div class="like"></div>
 								</div>
 								<h2 class="products-title">#2 Device Name</h2>
 								<p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
@@ -219,11 +222,7 @@
 											<i class="fa-solid fa-expand" aria-hidden="true"></i>
 										</button>
 									</div>
-									<div class="like">
-										<button class="btn like-btn">
-											<i class="fa-regular fa-heart" aria-hidden="true"></i>
-										</button>
-									</div>
+									<div class="like"></div>
 								</div>
 								<h2 class="products-title">#3 Device Name</h2>
 								<p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
@@ -244,11 +243,7 @@
 											<i class="fa-solid fa-expand" aria-hidden="true"></i>
 										</button>
 									</div>
-									<div class="like">
-										<button class="btn like-btn">
-											<i class="fa-regular fa-heart" aria-hidden="true"></i>
-										</button>
-									</div>
+									<div class="like"></div>
 								</div>
 								<h2 class="products-title">#1 Device Name</h2>
 								<p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
@@ -269,11 +264,7 @@
 											<i class="fa-regular fa-expand" aria-hidden="true"></i>
 										</button>
 									</div>
-									<div class="like">
-										<button class="btn like-btn">
-											<i class="fa-regular fa-heart" aria-hidden="true"></i>
-										</button>
-									</div>
+									<div class="like"></div>
 								</div>
 								<h2 class="products-title">#1 Device Name</h2>
 								<p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
@@ -294,11 +285,7 @@
 											<i class="fa-solid fa-expand" aria-hidden="true"></i>
 										</button>
 									</div>
-									<div class="like">
-										<button class="btn like-btn">
-											<i class="fa-regular fa-heart" aria-hidden="true"></i>
-										</button>
-									</div>
+									<div class="like"></div>
 								</div>
 								<h2 class="products-title">#1 Device Name</h2>
 								<p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
@@ -319,11 +306,7 @@
 											<i class="fa-solid fa-expand" aria-hidden="true"></i>
 										</button>
 									</div>
-									<div class="like">
-										<button class="btn like-btn">
-											<i class="fa-regular fa-heart" aria-hidden="true"></i>
-										</button>
-									</div>
+									<div class="like"></div>
 								</div>
 								<h2 class="products-title">#1 Device Name</h2>
 								<p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
@@ -344,11 +327,7 @@
 											<i class="fa-solid fa-expand" aria-hidden="true"></i>
 										</button>
 									</div>
-									<div class="like">
-										<button class="btn like-btn">
-											<i class="fa-regular fa-heart" aria-hidden="true"></i>
-										</button>
-									</div>
+									<div class="like"></div>
 								</div>
 								<h2 class="products-title">#2 Device Name</h2>
 								<p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
@@ -369,11 +348,7 @@
 											<i class="fa-solid fa-expand" aria-hidden="true"></i>
 										</button>
 									</div>
-									<div class="like">
-										<button class="btn like-btn">
-											<i class="fa-regular fa-heart" aria-hidden="true"></i>
-										</button>
-									</div>
+									<div class="like"></div>
 								</div>
 								<h2 class="products-title">#3 Device Name</h2>
 								<p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
@@ -400,6 +375,29 @@
 			</div>
 		</div>
 	</footer> 
+
+    <div class="modal">
+        <div class="modal-block">
+          <form action="">
+            <div class="btn-wrap">
+              <div class="btn-close">X</div>
+            </div>
+    
+            <h3>Please call for more details</h3>
+            <div class="form-field">
+              <input type="text" placeholder="Your name">
+            </div>
+            <div class="form-field">
+              <input type="text" placeholder="Your phone">
+            </div>
+            <button>Send</button>
+          </form>
+        </div>
+      </div>
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
