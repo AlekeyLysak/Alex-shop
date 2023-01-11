@@ -463,6 +463,7 @@ sup{
     background-image: url(../img/blue-heart.png);
     background-repeat: no-repeat;
     background-position: center;
+    margin-top:2px
 }
 
 .like:hover,.liked {
