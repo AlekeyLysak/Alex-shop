@@ -609,12 +609,14 @@ sup{
 }
 .modal-block {
     width: 280px;
-    height: 240px;
-    background-color: white;
+    height: 270px;
+    background-color: rgb(233, 222, 222);
     padding: 15px;
     text-align: center;
-    border-radius: 6px;
+    border-radius:10px;
     margin: 100px auto;
+    border: 2px solid white;
+    box-shadow: 0 0.9rem 1.7rem rgb(0 0 0 / 25%), 0 0.7rem 0.7rem rgb(0 0 0 / 22%);
 }
 
 .btn-wrap {
@@ -624,8 +626,50 @@ sup{
 .btn-wrap .btn-close {
     cursor: pointer;
 }
+
+.modal-title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #2c71b6;
+}
+
 .form-field {
+    margin-top:20px;
     margin-bottom: 15px;
+}
+
+.form-field input {
+    width: 100%;
+   height: 30px;
+   border: none;
+   outline: none;
+   padding-left: 15px;
+   height: 40px;
+}
+
+.modal-btn{
+    text-transform: uppercase;
+    color: #ffffff;
+    border: 2px solid white;
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 500;
+    width: 100px;
+}
+
+input{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 32px;
+}
+
+.show{
+    display: block;
+}
+
+.hide{
+    display: none;
 }
 .form-field input {
     width: 100%;
