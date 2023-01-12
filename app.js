@@ -58,3 +58,13 @@ $('.slider').slick({
     autoplaySpeed: 5000,
     dots:true,
 });
+
+
+//Scroll
+
+window.addEventListener("scroll", onScroll)
+function onScroll() {
+      if(scrollY >= 1300) {openModal()
+        window.removeEventListener("scroll",onScroll)
+    }
+};
