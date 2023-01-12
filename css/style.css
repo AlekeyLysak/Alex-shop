@@ -245,7 +245,7 @@ body{
 
 
 
-/*--------------CAROUSEL-----------------*/
+/*--------------SLIDER-----------------*/
 .slider-container {
 	height: 400px;
 	border-bottom: 1px solid #ffffff;
@@ -260,6 +260,7 @@ body{
 }
 
 .slick-prev:before, .slick-next:before {
+    content: url(../img/right.png);
     font-family: 'slick';
     font-size: 70px;
     line-height: 1;
@@ -269,6 +270,7 @@ body{
 }
 
 .slick-prev:before, .slick-prev:before {
+    content: url(../img/left.png);
     font-family: 'slick';
     font-size: 70px;
     line-height: 1;
