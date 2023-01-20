@@ -68,3 +68,52 @@ function onScroll() {
         window.removeEventListener("scroll",onScroll)
     }
 };
+
+
+let incrementBtns = document.querySelectorAll(".increment-btn");
+let decrementBtns = document.querySelectorAll(".decrement-btn");
+let productsCount = document.querySelectorAll(".product-quantity input");
+
+function Counter(incrementBtn, decrementBtn, inputField) {
+    this.domRefs = {
+        incrementBtn,
+        decrementBtn,
+        inputField,
+    };
+    
+    this.toggleButtonState = function () {
+        let count = +this.domRefs.inputField.value;
+        this.domRefs.decrementBtn.disabled = count <= 1;
+        this.domRefs.incrementBtn.disabled = count >= 10;
+    };
+     this.toggleButtonState();
+    
+    this.increment = function () {
+        this.domRefs.inputField.value = +this.domRefs.inputField.value + 1;
+        this.toggleButtonState();
+    };
+    
+    this.decrement = function () {
+        this.domRefs.inputField.value = +this.domRefs.inputField.value - 1;
+        this.toggleButtonState();
+    };
+    
+    this.domRefs.incrementBtn.addEventListener(
+        "click",
+        this.increment.bind(this)
+    );
+    this.domRefs.decrementBtn.addEventListener(
+        "click",
+        this.decrement.bind(this)
+    );
+}
+
+let counters = [];
+productsCount.forEach(
+    (item, i) =>
+        (counters[i] = new Counter (incrementBtns[i], decrementBtns[i], item))
+);
+
+
+
+
