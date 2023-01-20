@@ -658,6 +658,12 @@ sup{
     width: 100px;
 }
 
+.product-quantity{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
 input{
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
