@@ -661,7 +661,8 @@ sup{
 input{
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
-    line-height: 32px;
+    line-height: 22px;
+    outline: none;
 }
 
 .show{
